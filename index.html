@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---CDN link for tailwind css version 2.2.19-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>GreenDen</title>
+  </head>
+  <body>
+    <!---Responsive navbar-->
+    <nav
+      class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky"
+    >
+      <!--sticky helps to highlight the shadow-->
+      <h1 class="text-2xl">GreenDen</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 md:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <ul class="flex gap-5 text-gray-600 hidden md:flex">
+        <li><a href="#" class="hover:underline hover:text-black">Home</a></li>
+        <li>
+          <a href="products.html" class="hover:underline hover:text-black">Product</a>
+        </li>
+        <li>
+          <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Header - Section-->
+    <section class="bg-green-100 p-4 md:p-10 flex justify-center">
+      <!--here we flex display is applied for making it exact center we used justify-->
+      <div>
+        <p class="mb-4">
+          We offer wide range of artificial and Natural flowers
+        </p>
+        <!---mb- margin bottom-->
+        <h2 class="font-bold text-3xl md:text-5xl mb-5">Plants for your interior</h2>
+        <div>
+          <button class="bg-black rounded p-2 text-white">Shop Now</button>
+          <button class="bg-black rounded p-2 text-white">Watch Video</button>
+        </div>
+
+        <p class="mt-5">160+ Plant species | 100+ clients</p>
+        <!---mt-margin top-->
+      </div>
+
+      <div class="hidden md:block">
+        <img src="./images/header_image.jpg" alt="image" class="w-80 p-5" />
+        <!--image can only be visible on big screen in mobile image should be hidden-->
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h1 class="font-bold mt-5 text-3xl">About Us</h1>
+      <p>
+        Created for those who find peace, meaning, and beauty in nature’s
+        harmony.
+      </p>
+      <div class="md:flex">
+        <div class="border border-black p-2 m-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-20 inline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+            />
+          </svg>
+
+          <h2 class="text-xl font-medium">Who we are</h2>
+          <p>
+            GreenDen is a nature-inspired flower shop offering a large
+            assortment of fresh flowers, indoor plants, and handcrafted
+            arrangements. We believe every bloom has a story, and our collection
+            is made to help you express love, celebrate moments, and bring
+            nature closer to your life.
+          </p>
+        </div>
+        <div class="border border-black p-2 m-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-20 inline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3"
+            />
+          </svg>
+
+          <h2 class="text-xl font-medium">Free and Fast despatch</h2>
+          <p>
+            At GreenDen, we know that flowers are more than just a gift they
+            carry emotions, memories, and meaning. Because of that, we want
+            every order to arrive with the same freshness and beauty as the
+            moment it was prepared. That’s why we offer free and fast dispatch
+            on all orders, ensuring your flowers reach you on time without any
+            additional cost.
+          </p>
+        </div>
+        <div class="border border-black p-2 m-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-20 inline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z"
+            />
+          </svg>
+
+          <h2 class="text-xl font-medium">Here for you at any hour</h2>
+          <p>
+            At GreeDen, we know flowers carry emotions, memories, and meaning.
+            That’s why we’re here for you at every hour, making sure your order
+            arrives fresh, beautiful, and on time.From the moment you place your
+            order, our team carefully prepares and packages each bouquet. We
+            dispatch orders as quickly as possible and provide tracking updates
+            so you always know where your delivery is.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!---Best sellers-->
+    <section class="text-3xl text-center p-4 mt-5 font-bold">
+      <h1 class="font-bold mt-5 text-3xl">Best Sellers</h1>
+
+      <!---adding Images for best sellers-->
+      <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <div>
+          <img
+            src="./images/best_seller_jasmine.png"
+            class="inline hover:shadow-xl transform hover:translate-y-2"
+            alt="Jasmine"
+          />
+          <h1 class="text-lg font-medium">Jasmine Plant</h1>
+          <p class="text-lg font-light">₹200</p>
+        </div>
+
+        <div>
+          <img
+            src="./images/best_seller_rose.png"
+            class="inline hover:shadow-xl transform hover:translate-y-2"
+            alt="Rose"
+          />
+          <h1 class="text-lg font-medium">Rose Plant</h1>
+          <p class="text-lg font-light">₹180</p>
+        </div>
+
+        <div>
+          <img
+            src="./images/best_seller_lily.png"
+            class="inline hover:shadow-xl transform hover:translate-y-2"
+            alt="lily"
+          />
+          <h1 class="text-lg font-medium">Lily Plant</h1>
+          <p class="text-lg font-light">₹350</p>
+        </div>
+
+        <div>
+          <img
+            src="./images/best_seller_tulip.png"
+            class="inline hover:shadow-xl transform hover:translate-y-2"
+            alt="tulip"
+          />
+          <h1 class="text-lg font-medium">Tulip Plant</h1>
+          <p class="text-lg font-light">₹450</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Customer Reviews-->
+    <section>
+      <h1 class="text-center text-3xl font-bold mt-5">Customer Reviews</h1>
+      <div class="flex flex-col items-center m-5 text-white gap-5">
+
+        <div class="bg-green-900 p-5 container">
+          <p>
+            I’m completely new to gardening, and GreenDen made the whole
+            experience so easy and enjoyable. I ordered online, and apart from
+            fast delivery, what impressed me the most was their customer
+            support. They instantly replied to my doubts and even guided me
+            step-by-step on how to maintain my plants properly. They suggested
+            watering schedules, sunlight requirements, and beginner friendly
+            tips which helped me feel confident instead of overwhelmed. Their
+            support didn’t stop after delivery starting their gardening journey,
+            GreenDen is the best place with friendly guidance and reliable plants.
+          </p>
+          <p class="text-yellow-400 font-bold">-By Keerthana Sharma</p>
+        </div>
+          <div class="bg-green-900 p-5 container">
+            <p>
+              As a botany student, I’m genuinely impressed with GreenDen’s plant
+              collection and overall experience. I first ordered online, and the
+              delivery was fast, secure, and the plants arrived fresh with
+              proper labeling which I loved. Later, I visited the store, and the
+              ambience felt like walking into a live botanical lab. They had
+              jasmine (Jasminum sambac), hybrid roses, lilies (Lilium candidum),
+              succulents, herbs, and even rare species. The staff knew their
+              scientific names and care instructions, which made the visit even
+              more enjoyable. Both online and offline experiences were smooth,
+              informative, and worth the price.
+            </p>
+            <p class="text-yellow-400 font-bold">-By Jeffrey Boopathy</p>
+          </div>
+
+          <div class="bg-green-900 p-5 container">
+            <p>
+              I recently ordered a plant online from GreenDen, and I have to
+              say, the process was really smooth. The website is clean, simple,
+              and everything felt easy to find. My order arrived earlier than
+              expected, and the plant was packed so carefully no damage, no
+              mess, just fresh and healthy.A week later, I visited their
+              physical shop and the atmosphere was even better. The place looks
+              calm and refreshing with beautiful plants everywhere. Staff were
+              friendly and knowledgeable they didn’t just sell; they actually
+              guided me on how to take care of my plants.Overall, awesome
+              service and great ambience. Definitely recommending GreenDen to
+              friends and family!
+            </p>
+            <p class="text-yellow-400 font-bold">-By Mohan</p>
+          </div>
+
+        </div>
+    </section>
+
+    <!--News-letter-->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5 text-center">Join Our News Letter</h1>
+        <p>Your garden journey starts here join GreenDen for tips, discounts & more!</p>
+        <input type="text" class="border-black border p-5 m-2" style="width: 82%;"> 
+        <br>
+        <button class="bg-black p-5 text-white m-1 underline">Subscribe</button>
+    </section>
+
+    <!---footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5 mt-10"> 
+        <h1 class="font-bold text-3xl text-black">GreenDen</h1>
+        <p>Founded in 2020, GreenDen continues to inspire gardening by offering healthy plants, expert support, and eco-friendly choices.</p>
+        <p>&copy GreenDen 2025</p>
+    </section>
+  </body>
+</html>
